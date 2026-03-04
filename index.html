@@ -1,35 +1,316 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Bùi Đình Nguyễn</title>
+
+<meta charset="UTF-8">
+<title>Bùi Đình Nguyễn</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#0f2027;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:60px;
+background:linear-gradient(90deg,#11998e,#38ef7d);
+color:black;
+}
+
+header h1{
+font-size:45px;
+}
+
+/* MENU */
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00ffd5;
+}
+
+/* SECTION */
+
+section{
+padding:70px 15%;
+line-height:1.7;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:32px;
+}
+
+/* SLIDESHOW */
+
+#slide{
+display:block;
+margin:auto;
+width:420px;
+border-radius:15px;
+box-shadow:0 0 20px black;
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.gallery img{
+width:250px;
+border-radius:15px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+}
+
+#lightbox img{
+width:60%;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #38ef7d;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:25px;
+}
+
+/* MAP */
+
+iframe{
+width:100%;
+height:400px;
+border:none;
+border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#111;
+padding:25px;
+}
+
+</style>
+
 </head>
 
-<body style="font-family: Arial; margin:40px;">
+<body>
+
+<header>
 
 <h1>Bùi Đình Nguyễn</h1>
+<p>Thôn 1 - Xã Vũ Hoà - Đức Linh - Bình Thuận</p>
+
+</header>
+
+<nav>
+
+<a href="#about">Giới thiệu</a>
+<a href="#gallery">Hình ảnh</a>
+<a href="#timeline">Hành trình</a>
+<a href="#map">Địa điểm</a>
+
+</nav>
+
+
+<section id="about">
 
 <h2>Giới thiệu</h2>
+
 <p>
-Trang web giới thiệu thông tin về Bùi Đình Nguyễn và địa phương nơi ông sinh sống.
+Bùi Đình Nguyễn là một cá nhân sinh sống tại thôn 1, xã Vũ Hoà,
+huyện Đức Linh, tỉnh Bình Thuận. Anh lớn lên trong môi trường
+nông thôn giản dị, nơi những giá trị truyền thống, tinh thần
+lao động và sự gắn kết cộng đồng luôn được đề cao. CHUYÊN ĐI DỤ GÁI TỪ VŨ HOÀ CHO ĐẾN TRÀ TÂN VÀ CÒN CẢ Ở TÁNH LINH 
 </p>
 
-<h2>Tiểu sử</h2>
 <p>
-Bùi Đình Nguyễn sinh sống tại thôn 1, xã Vũ Hoà, huyện Đức Linh, tỉnh Bình Thuận, Việt Nam.
-Ông gắn bó với vùng đất Vũ Hoà và cuộc sống của người dân địa phương.
+Trong quá trình trưởng thành, anh luôn quan tâm đến việc phát
+triển bản thân, học hỏi kiến thức mới và khám phá những khả
+năng của mình. Theo nhiều nghiên cứu về phát triển cá nhân,
+việc hiểu rõ bản thân là bước quan trọng giúp mỗi người định
+hướng cuộc sống, phát huy điểm mạnh và cải thiện điểm yếu.
 </p>
 
-<h2>Địa điểm tại Vũ Hoà</h2>
 <p>
-Tại xã Vũ Hoà có một địa điểm được nhắc đến là máy chém tại Vũ Hoà – 
-một dấu tích lịch sử gắn với vùng đất này.
+Bùi Đình Nguyễn luôn tin rằng sự học hỏi và trải nghiệm thực
+tế là nền tảng để phát triển bền vững. Vì vậy anh luôn cố
+gắng rèn luyện kỹ năng, tiếp cận kiến thức mới và xây dựng
+những mối quan hệ tích cực trong cộng đồng.
 </p>
 
-<h2>Địa chỉ</h2>
-<p>
-Thôn 1, xã Vũ Hoà, huyện Đức Linh, tỉnh Bình Thuận.
-</p>
+</section>
+
+
+<section>
+
+<h2>Ảnh nổi bật</h2>
+
+<img id="slide" src="anh1.jpg">
+
+</section>
+
+
+<section id="gallery">
+
+<h2>Thư viện ảnh</h2>
+
+<div class="gallery">
+
+<img src="anh1.jpg">
+<img src="anh2.jpg">
+<img src="anh3.jpg">
+<img src="anh4.jpg">
+<img src="anh5.jpg">
+
+</div>
+
+</section>
+
+
+<section id="timeline">
+
+<h2>Hành trình</h2>
+
+<div class="timeline">
+
+<div>
+<b>Tuổi thơ</b>
+<p>Lớn lên tại xã Vũ Hoà, Đức Linh, Bình Thuận.</p>
+</div>
+
+<div>
+<b>Học tập</b>
+<p>Không ngừng học hỏi và phát triển kỹ năng.</p>
+</div>
+
+<div>
+<b>Hiện tại</b>
+<p>Tiếp tục hoàn thiện bản thân và xây dựng tương lai.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="map">
+
+<h2>Vị trí địa lý</h2>
+
+<iframe src="https://maps.google.com/maps?q=vu%20hoa%20duc%20linh%20binh%20thuan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+
+<footer>
+
+<p>Website cá nhân Bùi Đình Nguyễn</p>
+
+</footer>
+
+
+<div id="lightbox">
+<img src="">
+</div>
+
+
+<script>
+
+/* slideshow */
+
+var images=["anh1.jpg","anh2.jpg","anh3.jpg","anh4.jpg","anh5.jpg"];
+
+var i=0;
+
+setInterval(function(){
+
+i++;
+
+if(i>=images.length){
+i=0;
+}
+
+document.getElementById("slide").src=images[i];
+
+},2500);
+
+
+/* lightbox */
+
+var gallery=document.querySelectorAll(".gallery img");
+var lightbox=document.getElementById("lightbox");
+var lightimg=lightbox.querySelector("img");
+
+gallery.forEach(function(img){
+
+img.onclick=function(){
+lightbox.style.display="flex";
+lightimg.src=this.src;
+}
+
+});
+
+lightbox.onclick=function(){
+lightbox.style.display="none";
+}
+
+</script>
 
 </body>
 </html>
